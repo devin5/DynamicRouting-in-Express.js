@@ -12,7 +12,7 @@ exports.up = function(knex) {
       .onUpdate("CASCADE");
     tasks
       .boolean("Task_Comp")
-      .defaultTo(false);
+      .defaultTo(0);
     tasks.string("Task_Notes", 400);
   });
 };

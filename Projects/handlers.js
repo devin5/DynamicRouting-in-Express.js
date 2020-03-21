@@ -30,7 +30,7 @@ const putPro = (req, res) => {
   const { Project_Name, Project_Desc, Project_Comp } = req.body;
   const project = { Project_Name, Project_Desc, Project_Comp };
   helper.putProject(id, project)
-  .then(id => {
+  .then(() => {
     helper
     .getProject(id)
     .then(project => res.status(200).json(project))

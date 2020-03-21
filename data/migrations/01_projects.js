@@ -3,7 +3,7 @@ exports.up = function(knex) {
     projects.increments("Project_ID");
     projects.string("Project_Name", 150).notNullable();
     projects.text("Project_Desc", 500).notNullable();
-    projects.boolean("Project_Comp").defaultTo(false);
+    projects.boolean("Project_Comp").defaultTo(0);
   });
 };
 exports.down = function(knex, Promise) {
