@@ -1,9 +1,13 @@
 const db = require("../data/DBConfig")
 
-const getAll = () => {
-    return db("projects")
-}
+const getAll = () => db("projects")
+
+
+
 
 module.exports = {
-    getAll
+    getAll,
+    
+
 }
+
