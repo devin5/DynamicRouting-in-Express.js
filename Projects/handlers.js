@@ -1,4 +1,4 @@
-const helper = require("./helpers");
+const helper = require("./{");
 
 const getAll = (req, res) => {
   helper
